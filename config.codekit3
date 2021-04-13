@@ -77,28 +77,28 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/section2\/joinus.jpg" : {
-      "ft" : 16384,
-      "iS" : 114540,
-      "jF" : 0,
+    "\/deploy\/img\/section2\/icon.png" : {
+      "ft" : 32768,
+      "iS" : 20556,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/section2\/joinus.jpg",
+      "oAP" : "\/deploy\/img\/section2\/icon.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
+      "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/section2\/needtickets.jpg" : {
-      "ft" : 16384,
-      "iS" : 654859,
-      "jF" : 0,
+    "\/deploy\/img\/section2\/icon2.png" : {
+      "ft" : 32768,
+      "iS" : 22164,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/section2\/needtickets.jpg",
+      "oAP" : "\/deploy\/img\/section2\/icon2.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
+      "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
