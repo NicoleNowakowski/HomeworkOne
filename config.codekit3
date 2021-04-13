@@ -306,13 +306,53 @@
       "oAP" : "\/design\/Nowakowski_UpdatedSketchFile.sketch",
       "oF" : 0
     },
-    "\/dev\/footer.kit" : {
+    "\/dev\/content\/hero1.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/footer.html",
-      "oF" : 0
+      "oAP" : "\/dev\/content\/hero1.html",
+      "oF" : 1
+    },
+    "\/dev\/content\/hero2.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/hero2.html",
+      "oF" : 1
+    },
+    "\/dev\/content\/hero3.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/hero3.html",
+      "oF" : 1
+    },
+    "\/dev\/content\/new.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/new.html",
+      "oF" : 1
+    },
+    "\/dev\/content\/search.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/search.html",
+      "oF" : 1
+    },
+    "\/dev\/global\/footer.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/global\/footer.html",
+      "oF" : 1
     },
     "\/dev\/global\/head.kit" : {
       "cB" : 0,
@@ -322,20 +362,20 @@
       "oAP" : "\/dev\/global\/head.html",
       "oF" : 0
     },
+    "\/dev\/global\/header.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/global\/header.html",
+      "oF" : 1
+    },
     "\/dev\/global\/scripts.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/global\/scripts.html",
-      "oF" : 0
-    },
-    "\/dev\/header.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/header.html",
       "oF" : 0
     },
     "\/dev\/index.kit" : {
@@ -510,38 +550,6 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
-    },
-    "\/dev\/section1.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/section1.html",
-      "oF" : 0
-    },
-    "\/dev\/section2.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/section2.html",
-      "oF" : 0
-    },
-    "\/dev\/section3.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/section3.html",
-      "oF" : 0
-    },
-    "\/dev\/section4.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/section4.html",
-      "oF" : 0
     },
     "\/README.md" : {
       "cB" : 0,
