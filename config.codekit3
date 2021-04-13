@@ -113,6 +113,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/section1\/herospot1.jpg" : {
+      "ft" : 16384,
+      "iS" : 89873,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/section1\/herospot1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/section2\/icon.png" : {
       "ft" : 32768,
       "iS" : 20556,
@@ -147,7 +160,7 @@
       "oAP" : "\/deploy\/img\/section3\/feature1.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -160,17 +173,17 @@
       "oAP" : "\/deploy\/img\/section3\/feature3.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/section4\/about.jpg" : {
+    "\/deploy\/img\/section3\/hero-2-desktop.jpg" : {
       "ft" : 16384,
-      "iS" : 553881,
+      "iS" : 83926,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/section4\/about.jpg",
+      "oAP" : "\/deploy\/img\/section3\/hero-2-desktop.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -178,12 +191,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/section4\/activities.jpg" : {
+    "\/deploy\/img\/section3\/hero-3-desktop.jpg" : {
       "ft" : 16384,
-      "iS" : 314822,
+      "iS" : 61055,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/section4\/activities.jpg",
+      "oAP" : "\/deploy\/img\/section3\/hero-3-desktop.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -191,12 +204,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/section4\/learnaboutourlanterns.jpg" : {
+    "\/deploy\/img\/section4\/about2.jpg" : {
       "ft" : 16384,
-      "iS" : 553746,
+      "iS" : 21730,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/section4\/learnaboutourlanterns.jpg",
+      "oAP" : "\/deploy\/img\/section4\/about2.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -204,12 +217,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/section4\/tourschedule.jpg" : {
+    "\/deploy\/img\/section4\/activities1.jpg" : {
       "ft" : 16384,
-      "iS" : 371821,
+      "iS" : 25425,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/section4\/tourschedule.jpg",
+      "oAP" : "\/deploy\/img\/section4\/activities1.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -217,12 +230,38 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/section4\/whatyoucanexpect.jpg" : {
+    "\/deploy\/img\/section4\/learnaboutourlanterns1.jpg" : {
       "ft" : 16384,
-      "iS" : 137206,
+      "iS" : 18818,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/section4\/whatyoucanexpect.jpg",
+      "oAP" : "\/deploy\/img\/section4\/learnaboutourlanterns1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/section4\/tourschedule1.jpg" : {
+      "ft" : 16384,
+      "iS" : 34798,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/section4\/tourschedule1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/section4\/whatyoucanexpect1.jpg" : {
+      "ft" : 16384,
+      "iS" : 17003,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/section4\/whatyoucanexpect1.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
