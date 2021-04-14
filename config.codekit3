@@ -322,12 +322,12 @@
       "oAP" : "\/dev\/content\/hero2.html",
       "oF" : 1
     },
-    "\/dev\/content\/hero3.kit" : {
+    "\/dev\/content\/joinus.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/hero3.html",
+      "oAP" : "\/dev\/content\/joinus.html",
       "oF" : 1
     },
     "\/dev\/content\/new.kit" : {
