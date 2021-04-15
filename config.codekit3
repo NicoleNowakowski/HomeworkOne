@@ -97,32 +97,6 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/deploy\/img\/Header\/NightLightsLogoTiny.png" : {
-      "ft" : 32768,
-      "iS" : 3641,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/Header\/NightLightsLogoTiny.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/deploy\/img\/section1\/herospot.jpg" : {
-      "ft" : 16384,
-      "iS" : 429729,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/section1\/herospot.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/deploy\/img\/section1\/herospot1.jpg" : {
       "ft" : 16384,
       "iS" : 89873,
@@ -177,23 +151,10 @@
     },
     "\/deploy\/img\/section3\/feature3.jpg" : {
       "ft" : 16384,
-      "iS" : 420091,
+      "iS" : 61055,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/section3\/feature3.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/deploy\/img\/section3\/hero-2-desktop.jpg" : {
-      "ft" : 16384,
-      "iS" : 83926,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/section3\/hero-2-desktop.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
