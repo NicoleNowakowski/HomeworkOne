@@ -1,28 +1,5 @@
 /* =============
     Base
 ============= */
-figure {
-    margin: 0;
-    padding: 0;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-
-    li {
-        list-style: none;
-    }
-}
-
-.content {
-    margin-bottom: 24px;
-
-    @include md {
-        margin-bottom: 32px;
-    }
-
-    @include xl {
-        margin-bottom: 64px;
-    }
-}
+h1 { font-family: 'Volkhov', serif;}
+h2, h3, h4, h5 {font-family: 'Raleway', sans-serif}
