@@ -360,6 +360,50 @@ p, h2, h3, h4, h5 {
   font-family: "Raleway", sans-serif;
 }
 
+header {
+  display: grid;
+  grid-template-areas: ". header .";
+  grid-template-columns: auto 1200px auto;
+  background-color: #090E1E;
+}
+
+footer {
+  display: grid;
+  grid-template-areas: ". footer .";
+  grid-template-columns: auto 1200px auto;
+  background-color: #090E1E;
+}
+
+#search {
+  display: grid;
+  grid-template-areas: ". search .";
+  grid-template-columns: auto 1200px auto;
+}
+
+#hero > div img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+#hero-2 {
+  display: grid;
+  grid-template-areas: ". hero-2 .";
+  grid-template-columns: auto 1350px auto;
+}
+
+#joinus {
+  display: grid;
+  grid-template-areas: ". planning .";
+  grid-template-columns: auto 1200px auto;
+}
+
+#new {
+  display: grid;
+  grid-template-areas: ". new .";
+  grid-template-columns: auto 1200px auto;
+}
+
 /* =============
     Typography
 ============= */
