@@ -360,6 +360,14 @@ p, h2, h3, h4, h5 {
   font-family: "Raleway", sans-serif;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
 header {
   display: grid;
   grid-template-areas: ". header .";
@@ -437,3 +445,10 @@ textarea {
 /* =============
     Footer
 ============= */
+#hero img {
+  max-width: 100%;
+}
+
+#hero-2 ul {
+  display: grid;
+}
