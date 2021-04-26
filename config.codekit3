@@ -149,12 +149,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/section3\/feature3.jpg" : {
+    "\/deploy\/img\/section3\/feature2.jpg" : {
       "ft" : 16384,
-      "iS" : 61055,
+      "iS" : 613238,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/section3\/feature3.jpg",
+      "oAP" : "\/deploy\/img\/section3\/feature2.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -162,12 +162,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/section3\/hero-3-desktop.jpg" : {
+    "\/deploy\/img\/section3\/feature3.jpg" : {
       "ft" : 16384,
       "iS" : 61055,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/section3\/hero-3-desktop.jpg",
+      "oAP" : "\/deploy\/img\/section3\/feature3.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -493,34 +493,6 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/layout\/_header.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/dev\/scss\/sections\/_footer.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_footer.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/dev\/scss\/sections\/_header.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_header.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,

@@ -442,13 +442,75 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". header .";
+}
+header > div {
+  grid-area: header;
+}
+
 /* =============
     Footer
 ============= */
-#hero img {
+footer {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". footer .";
+}
+footer > div {
+  grid-area: footer;
+}
+
+#hero1 img {
   max-width: 100%;
+}
+#hero1 ul li {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". hero-content .";
+}
+#hero1 ul li a {
+  grid-area: hero-content;
 }
 
 #hero-2 ul {
   display: grid;
+}
+#hero-2 ul li img {
+  width: 100%;
+}
+
+#joinus ul li {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". joinus-content .";
+}
+#joinus ul li div {
+  grid-area: hero-content;
+}
+#joinus ul #feature2 {
+  display: none;
+}
+
+#new ul li img {
+  width: 100%;
+}
+#new ul li section {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". new .";
+}
+#new ul li section > div {
+  grid-area: new-content;
+}
+
+#search {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". search .";
+}
+#search > div {
+  grid-area: search;
 }

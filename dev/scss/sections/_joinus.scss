@@ -1,0 +1,17 @@
+#joinus {
+
+    ul {
+        li {
+            display: grid;
+            grid-template-columns: 16px auto 16px;
+            grid-template-areas: ". joinus-content .";
+
+            div {
+                grid-area: hero-content;
+            }
+        }
+        #feature2{
+            display: none;
+        }
+    }
+}
