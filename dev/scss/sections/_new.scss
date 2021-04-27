@@ -1,3 +1,6 @@
+/* =============
+    New
+============= */
 #new{
 
     ul{
@@ -7,10 +10,11 @@
             }
             section{
                 display: grid;
-            grid-template-columns: 16px auto 16px;
-            grid-template-areas: ". new .";
+                grid-template-columns: 16px auto 16px;
+                grid-template-areas: ". new .";
+
                 >div{
-                    grid-area: new-content;
+                    grid-area: new;
                 }
     
             }

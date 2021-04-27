@@ -463,6 +463,9 @@ footer > div {
   grid-area: footer;
 }
 
+/* =============
+    Hero1
+============= */
 #hero1 img {
   max-width: 100%;
 }
@@ -475,13 +478,22 @@ footer > div {
   grid-area: hero-content;
 }
 
-#hero-2 ul {
+/* =============
+    Hero2
+============= */
+#hero2 ul {
   display: grid;
 }
-#hero-2 ul li img {
+#hero2 ul li img {
   width: 100%;
 }
+#hero2 ul #feature2 {
+  display: none;
+}
 
+/* =============
+    JoinUs
+============= */
 #joinus ul li {
   display: grid;
   grid-template-columns: 16px auto 16px;
@@ -494,6 +506,9 @@ footer > div {
   display: none;
 }
 
+/* =============
+    New
+============= */
 #new ul li img {
   width: 100%;
 }
@@ -503,9 +518,12 @@ footer > div {
   grid-template-areas: ". new .";
 }
 #new ul li section > div {
-  grid-area: new-content;
+  grid-area: new;
 }
 
+/* =============
+    Search
+============= */
 #search {
   display: grid;
   grid-template-columns: 16px auto 16px;

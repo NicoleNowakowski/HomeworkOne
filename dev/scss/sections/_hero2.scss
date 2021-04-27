@@ -1,12 +1,17 @@
-#hero-2 {
+/* =============
+    Hero2
+============= */
+#hero2 {
     ul {
         display: grid;
 
-        li{
-            img{
+        li {
+            img {
                 width: 100%;
             }
-
         }
-}
+        #feature2 {
+            display: none;
+        }
+    }
 }
