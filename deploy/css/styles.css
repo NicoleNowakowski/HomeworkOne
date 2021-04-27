@@ -510,7 +510,7 @@ footer > div {
     New
 ============= */
 #new ul li img {
-  width: 100%;
+  width: 100vw;
 }
 #new ul li section {
   display: grid;
