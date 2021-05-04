@@ -535,25 +535,23 @@ footer > div #social ul {
   margin: 0;
   padding: 0px;
 }
-@media (min-width: 768px) {
-  #hero1 #hero-item {
-    grid-area: hero-item;
-  }
+#hero1 #hero-item {
+  grid-area: heroitem;
 }
-@media (min-width: 768px) {
-  #hero1 #hero-location {
-    grid-area: hero-location;
-  }
+#hero1 #hero-location {
+  grid-area: herolocation;
 }
 @media (min-width: 768px) {
   #hero1 #hero > div ul {
     display: grid;
     grid-template-columns: 40% auto;
+    grid-template-areas: "heroitem herolocation";
   }
 }
 @media (min-width: 1024px) {
   #hero1 #hero > div ul {
     grid-template-columns: 50% auto;
+    grid-template-areas: "heroitem herolocation";
   }
 }
 
