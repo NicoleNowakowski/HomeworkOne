@@ -605,20 +605,24 @@ footer > div #social ul {
 #joinus ul li div {
   grid-area: joinus-content;
 }
-#joinus #magical {
-  grid-area: magical;
-}
-#joinus #tickets {
-  grid-area: tickets;
+@media (min-width: 768px) {
+  #joinus #magical {
+    grid-area: magical;
+  }
 }
 @media (min-width: 768px) {
-  #joinus {
+  #joinus #tickets {
+    grid-area: tickets;
+  }
+}
+@media (min-width: 768px) {
+  #joinus ul {
     grid-template-columns: 16px 360px 16px 360px 16px;
     grid-template-areas: ". magical . tickets .";
   }
 }
 @media (min-width: 1024px) {
-  #joinus {
+  #joinus ul {
     grid-template-columns: 16px 488px 16px 488px 16px;
     grid-template-areas: ". magical . tickets .";
   }
