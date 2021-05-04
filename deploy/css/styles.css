@@ -569,17 +569,7 @@ footer > div #social ul {
     grid-area: feature1;
   }
 }
-@media (min-width: 1024px) {
-  #hero2 ul #feature1 {
-    grid-area: feature1;
-  }
-}
 @media (min-width: 768px) {
-  #hero2 ul #feature3 {
-    grid-area: feature3;
-  }
-}
-@media (min-width: 1024px) {
   #hero2 ul #feature3 {
     grid-area: feature3;
   }
@@ -588,13 +578,13 @@ footer > div #social ul {
   display: none;
 }
 @media (min-width: 768px) {
-  #hero2 {
-    grid-template-columns: 50% 50%;
+  #hero2 ul {
+    grid-template-columns: repeat 2, 1fr;
     grid-template-areas: "feature1 feature3";
   }
 }
 @media (min-width: 1024px) {
-  #hero2 {
+  #hero2 ul {
     grid-template-columns: 16px 600px 392px 16px;
     grid-template-areas: ". feature1 feature3 .";
   }
@@ -609,7 +599,7 @@ footer > div #social ul {
   grid-template-areas: ". joinus-content .";
 }
 #joinus ul li div {
-  grid-area: hero-content;
+  grid-area: joinus-content;
 }
 #joinus #magical {
   grid-area: magical;
