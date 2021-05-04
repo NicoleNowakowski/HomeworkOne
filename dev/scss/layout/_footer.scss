@@ -3,20 +3,23 @@
 ============= */
 footer {
 
-	@include xl {
 		display: grid;
 		grid-template-areas: ". footer .";
-		grid-template-columns: auto 1200px auto;
-	}
+		grid-template-columns: 16px auto 16px;
+	 
+		@include xl {
+			grid-template-columns: auto 1200px auto;
+		}
 
 	>div {
-		display: grid;
+		grid-area: footer;
 		gap: 24px;
 
 		@include md {
+			display: grid;
 			grid-template-areas: "upcomingevents newsletter"
 				"upcomingevents social";
-			grid-template-columns: 50% auto;
+			grid-template-columns: repeat (2, 1fr);
 		}
 
 		@include lg {

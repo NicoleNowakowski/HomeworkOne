@@ -473,21 +473,25 @@ header > div section img {
 /* =============
     Footer
 ============= */
+footer {
+  display: grid;
+  grid-template-areas: ". footer .";
+  grid-template-columns: 16px auto 16px;
+}
 @media (min-width: 1200px) {
   footer {
-    display: grid;
-    grid-template-areas: ". footer .";
     grid-template-columns: auto 1200px auto;
   }
 }
 footer > div {
-  display: grid;
+  grid-area: footer;
   gap: 24px;
 }
 @media (min-width: 768px) {
   footer > div {
+    display: grid;
     grid-template-areas: "upcomingevents newsletter" "upcomingevents social";
-    grid-template-columns: 50% auto;
+    grid-template-columns: repeat 2, 1fr;
   }
 }
 @media (min-width: 1024px) {

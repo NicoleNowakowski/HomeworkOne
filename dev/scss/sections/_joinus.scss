@@ -16,15 +16,19 @@
     }
 
     #magical {
-        @include md {grid-area: magical;
-    } }
+        @include md {
+            grid-area: magical;
+        }
+    }
 
     #tickets {
-        @include md {grid-area: tickets;}
+        @include md {
+            grid-area: tickets;
+        }
     }
 
     @include md {
-        ul{
+        ul {
             grid-template-columns: 16px 360px 16px 360px 16px;
             grid-template-areas: ". magical . tickets .";
         }
@@ -32,8 +36,10 @@
 
     @include lg {
 
-        ul {grid-template-columns: 16px 488px 16px 488px 16px;
-            grid-template-areas: ". magical . tickets ."; }
-        
+        ul {
+            grid-template-columns: 16px 488px 16px 488px 16px;
+            grid-template-areas: ". magical . tickets .";
+        }
+
     }
 }
