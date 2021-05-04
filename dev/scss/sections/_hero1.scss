@@ -2,21 +2,39 @@
     Hero1
 ============= */
 #hero1 {
-    img {
-        max-width: 100%;
-    }
+    >div {
+        img {
+            display: block; 
+            object-fit: cover;
+            width: 100%;
+        }
 
-    ul {
-        li {
-            display: grid;
-            grid-template-columns: 16px auto 16px;
-            grid-template-areas: ". hero-content .";
-
-            a {
-                grid-area: hero-content;
-
-            }
-
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0px;
         }
     }
+
+#hero-item {
+    @include md {grid-area: hero-item;}
+   
+}
+
+#hero-location {
+    @include md {grid-area: hero-location;}
+}
+
+@include md {
+    #hero > div ul {
+        display: grid;
+        grid-template-columns: 40% auto;
+      }
+}
+
+@include lg {
+    #hero > div ul {
+        grid-template-columns: 50% auto;  }
+}
+
 }

@@ -13,8 +13,23 @@
                 grid-area: hero-content;
             }
         }
-        #feature2{
-            display: none;
-        }
+    }
+
+    #magical {
+        grid-area: magical;
+    }
+
+    #tickets {
+        grid-area: tickets;
+    }
+
+    @include md {
+        grid-template-columns: 16px 360px 16px 360px 16px;
+        grid-template-areas: ". magical . tickets .";
+    }
+
+    @include lg {
+        grid-template-columns: 16px 488px 16px 488px 16px;
+        grid-template-areas: ". magical . tickets .";
     }
 }

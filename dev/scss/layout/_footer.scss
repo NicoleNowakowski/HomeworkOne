@@ -2,12 +2,66 @@
     Footer
 ============= */
 footer {
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". footer .";
 
-    >div {
-        grid-area: footer
-    }
+	@include xl {
+		display: grid;
+		grid-template-areas: ". footer .";
+		grid-template-columns: auto 1200px auto;
+	}
 
+	>div {
+		display: grid;
+		gap: 24px;
+
+		@include md {
+			grid-template-areas: "upcomingevents newsletter"
+				"upcomingevents social";
+			grid-template-columns: 50% auto;
+		}
+
+		@include lg {
+			grid-template-areas: "upcomingevents newsletter social";
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		@include xl {
+			grid-area: footer;
+		}
+
+
+		#upcomingevents {
+			@include md {
+				grid-area: upcomingevents;
+			}
+		}
+
+		#newsletter {
+			@include md {
+				grid-area: newsletter;
+			}
+
+			form {
+				input {
+					
+					border: none;
+				}
+			}
+		}
+
+		#social {
+			@include md {
+				grid-area: social;
+			}
+
+
+			ul {
+				border: none;
+
+				li {
+
+					
+				}
+			}
+		}
+	}
 }

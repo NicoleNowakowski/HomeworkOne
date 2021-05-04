@@ -21,5 +21,30 @@
 
         }
     }
+#new-gallery-1 {
+    grid-area: new-gallery-1;
+}
+#new-gallery-2 {
+    grid-area: new-gallery-2;
+}
+#new-gallery-3{
+    grid-area: new-gallery-3;
+}
+#new-gallery-4{
+    grid-area: new-gallery-4;
+}
+#new-gallery-5{
+    grid-area: new-gallery-5;
+}
+@include md {
+    grid-template-columns: 16px 360px 16px 360px 16px;
+    grid-template-areas: ". new-gallery-1 . new-gallery-2 ."
+    ". new-gallery-3 . new-gallery-4 ."
+    ". . new-gallery-5 . .";
+}
 
+@include lg {
+    grid-template-columns: 16px 320px 16px 320px 16px 320px 16px;
+    grid-template-areas: ". new-gallery-1 . new-gallery-2 . new-gallery-3 .";
+}
 }
