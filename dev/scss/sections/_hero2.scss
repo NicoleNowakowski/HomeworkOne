@@ -32,7 +32,7 @@
         }
     @include lg {
         ul{  
-             grid-template-columns: 16px 600px 392px 16px ;
+             grid-template-columns: 16px auto auto 16px ;
             grid-template-areas: ". feature1 feature3 .";
 
         }

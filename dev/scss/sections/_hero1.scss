@@ -17,14 +17,14 @@
     }
 
 #hero-item {
-    grid-area: heroitem; }
+   @include md {grid-area: heroitem; } }
    
 #hero-location {
-    grid-area: herolocation; }
+    @include md {grid-area: herolocation;} }
 
 
 @include md {
-    #hero > div ul {
+    #hero1 > div ul {
         display: grid;
         grid-template-columns: 40% auto;
         grid-template-areas: "heroitem herolocation";
@@ -32,7 +32,7 @@
 }
 
 @include lg {
-    #hero > div ul {
+    #hero1 > div ul {
         grid-template-columns: 50% auto; 
         grid-template-areas: "heroitem herolocation"; }
 }
