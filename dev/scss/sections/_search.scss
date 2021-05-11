@@ -2,12 +2,15 @@
     Search
 ============= */
 #search {
+    background-color: #FFFFFF;
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". search .";
     
     >div{
+        padding:16px;
         grid-area: search;
+        margin: 0 15px;
         @include xl{
             display: grid;
             grid-template-columns: auto 1200px auto;

@@ -3,6 +3,7 @@
 ============= */
 
 header {
+	background-color: #090E1E ;
 	display: grid;
 
 	@include xl {
@@ -11,6 +12,7 @@ header {
 	}
 
 	>div {
+		padding: 15px;
 		@include xl {
 			grid-area: header;
 		}

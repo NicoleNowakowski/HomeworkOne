@@ -356,7 +356,7 @@ h1 {
   font-family: "Volkhov", serif;
 }
 
-p, h2, h3, h4, h5 {
+p, h2, h3, h4, h5, address {
   font-family: "Raleway", sans-serif;
 }
 
@@ -399,6 +399,7 @@ textarea {
     Header
 ============= */
 header {
+  background-color: #090E1E;
   display: grid;
 }
 @media (min-width: 1200px) {
@@ -406,6 +407,9 @@ header {
     grid-template-areas: ". header .";
     grid-template-columns: auto 1200px auto;
   }
+}
+header > div {
+  padding: 15px;
 }
 @media (min-width: 1200px) {
   header > div {
@@ -429,12 +433,44 @@ header > div section img {
 /* =============
     Footer
 ============= */
+footer {
+  background-color: #090E1E;
+  padding: 16px;
+}
 @media (min-width: 1200px) {
   footer {
     display: grid;
     grid-template-areas: ". footer .";
     grid-template-columns: auto 1200px auto;
   }
+}
+footer div h1 {
+  color: #F7D7AF;
+  font-size: 20pt;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+footer div section {
+  padding-top: 16px;
+}
+footer div section h2 {
+  font-size: 16pt;
+  font-weight: 600;
+  color: #BFC9E0;
+  padding-bottom: 8px;
+}
+footer div section ul {
+  border-bottom: 1px solid #F4E7E6;
+  padding-bottom: 16px;
+}
+footer div section ul li {
+  display: flex;
+  margin-bottom: 16px;
+}
+footer div section ul li div {
+  align-items: center;
+  display: flex;
+  margin-right: 16px;
 }
 footer > div {
   display: grid;
@@ -484,6 +520,20 @@ footer > div #social ul {
 #hero1 > div img {
   display: block;
   width: 100%;
+}
+#hero1 > div ul #hero-item {
+  background-color: #703824;
+}
+#hero1 > div ul #hero-item h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+#hero1 > div ul #hero-item p {
+  font-size: 14pt;
+  font-weight: 400;
+}
+#hero1 > div ul #hero-location {
+  background-color: #A65335;
 }
 
 /* =============
@@ -539,6 +589,12 @@ footer > div #social ul {
   display: grid;
   gap: 16px;
 }
+#joinus > div ul li {
+  background-color: #BFC9E0;
+  display: flex;
+  padding: 16px;
+}
+
 /* =============
     New
 ============= */
@@ -553,6 +609,13 @@ footer > div #social ul {
   #new {
     grid-template-columns: auto 1024px auto;
   }
+}
+#new > div h1 {
+  color: #18254F;
+  font-size: 20pt;
+  font-weight: 700;
+  margin-bottom: 16px;
+  padding: 0 16px;
 }
 @media (min-width: 768px) {
   #new > div {
@@ -573,6 +636,9 @@ footer > div #social ul {
     grid-template-areas: "n1 n1 n2 n2 n3 n3" ". n4 n4 n5 n5 .";
   }
 }
+#new > div ul li {
+  background-color: #18254F;
+}
 #new > div ul li img {
   width: 100%;
 }
@@ -580,6 +646,18 @@ footer > div #social ul {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". new-content .";
+}
+#new > div ul li section h1 {
+  color: #FBF1DA;
+  font-size: 27pt;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+#new > div ul li section p {
+  color: #FDFAF2;
+  font-size: 16pt;
+  font-weight: 400;
+  margin-bottom: 16pt;
 }
 #new > div ul li section > div {
   grid-area: new-content;
@@ -614,12 +692,15 @@ footer > div #social ul {
     Search
 ============= */
 #search {
+  background-color: #FFFFFF;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
 }
 #search > div {
+  padding: 16px;
   grid-area: search;
+  margin: 0 15px;
 }
 @media (min-width: 1200px) {
   #search > div {
