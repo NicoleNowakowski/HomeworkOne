@@ -32,9 +32,20 @@ div{
 				margin-bottom: 16px;
 
 				div{
-					align-items: center;
+				align-items: center;
 				display: flex;
 				margin-right: 16px;
+				}
+				address{
+					font-size: 12pt;
+					font-weight: 400;
+					color: #BFC9E0; 
+
+				}
+				a{
+					font-size: 12pt;
+					font-weight: 400;
+					color: #BFC9E0
 				}
 			}
 

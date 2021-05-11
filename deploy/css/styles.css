@@ -356,7 +356,7 @@ h1 {
   font-family: "Volkhov", serif;
 }
 
-p, h2, h3, h4, h5, address {
+p, h2, h3, h4, h5, address, a {
   font-family: "Raleway", sans-serif;
 }
 
@@ -471,6 +471,16 @@ footer div section ul li div {
   align-items: center;
   display: flex;
   margin-right: 16px;
+}
+footer div section ul li address {
+  font-size: 12pt;
+  font-weight: 400;
+  color: #BFC9E0;
+}
+footer div section ul li a {
+  font-size: 12pt;
+  font-weight: 400;
+  color: #BFC9E0;
 }
 footer > div {
   display: grid;
