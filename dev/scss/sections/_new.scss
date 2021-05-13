@@ -1,111 +1,138 @@
 /* =============
     New
 ============= */
-#new {
+#new{
 
-    @include md {
+    @include md{
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". new .";
     }
 
-    @include lg {
+    @include lg{
         grid-template-columns: auto 1024px auto;
     }
+   
+    >div{
 
-    >div {
-        h1 {
-            color: #18254F;
-            font-size: 20pt;
-            font-weight: 700;
-            margin-bottom: 16px;
-            padding: 0 16px;
-
-        }
-
-        @include md {
+        @include md{
             grid-area: new;
         }
 
+        >h1{
+            color: $barleygroats;
+			font-size: rem-calc(20);
+			font-weight: 700;
+			margin-bottom: 16px;
+			padding: 0 16px;
+			@include md {
+				font-size: rem-calc(25);
+				font-weight: 700;
+			}
+        }
 
-        ul {
+        ul{
 
-            @include md {
+            @include md{
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
                 grid-template-areas: "n1 n1 n2 n2"
-                    "n3 n3 n4 n4"
-                    ". n5 n5 .";
+                "n3 n3 n4 n4"
+                ". n5 n5 .";
                 gap: 16px;
             }
 
-            @include lg {
+            @include lg{
                 grid-template-columns: repeat(6, 1fr);
-                grid-template-areas:
-                    "n1 n1 n2 n2 n3 n3"
-                    ". n4 n4 n5 n5 .";
+                grid-template-areas: 
+                "n1 n1 n2 n2 n3 n3"
+                ". n4 n4 n5 n5 .";
             }
+    
+            li{
+                background-color: $rurikon;
+                box-shadow: 0px 1px 1px 0px rgba(42, 48, 54, .3);
+    
+                // img{
+                //     width: 100%;
+                // }
 
-            li {
-                background-color: #18254F;
+                >div {
+					background-position: center bottom;
+					background-size: cover;
+					height: 165px;
 
-                img {
-                    width: 100%;
-                }
+                    @include md{
+                        height: 180px;
+                    }
 
-                section {
+                    @include lg{
+                        height: 160px;
+                    }
+				}
+    
+                section{
                     display: grid;
                     grid-template-columns: 16px auto 16px;
                     grid-template-areas: ". new-content .";
-
-                    h1 {
-                        color: #FBF1DA;
-                        font-size: 27pt;
-                        font-weight: 400;
-                        margin-bottom: 16px;
-                    }
-
-                    p {
-                        color: #FDFAF2 ;
-                        font-size: 16pt ;
-                        font-weight: 400 ;
-                        margin-bottom: 16pt;
-                    }
-
-                    >div {
+                    >div{
+                        padding: 16px;
                         grid-area: new-content;
+                        h1 {
+                            font-size: rem-calc(27);
+                            font-weight: 700;
+                            margin-bottom: 16px;
+                        }
+                        p {
+                            margin-bottom: 16px;
+                        }
                     }
                 }
             }
 
-            #new-gallery-1 {
-                @include md {
+            #new-gallery-1{
+                @include md{
                     grid-area: n1;
                 }
+                >div {
+					background-image: url("../img/section4/tourschedule1.jpg");
+				}
             }
 
-            #new-gallery-2 {
-                @include md {
+            #new-gallery-2{
+                @include md{
                     grid-area: n2;
                 }
+                >div {
+					background-image: url("../img/section4/about2.jpg");
+				}
             }
 
-            #new-gallery-3 {
-                @include md {
+            #new-gallery-3{
+                @include md{
                     grid-area: n3;
                 }
+                >div {
+					background-image: url("../img/section4/whatyoucanexpect1.jpg");
+				}
             }
 
-            #new-gallery-4 {
-                @include md {
+            #new-gallery-4{
+                @include md{
                     grid-area: n4;
                 }
+                >div {
+					background-image: url("../img/section4/learnaboutourlanterns1.jpg");
+				}
             }
 
-            #new-gallery-5 {
-                @include md {
+            #new-gallery-5{
+                @include md{
                     grid-area: n5;
                 }
+                >div {
+					background-image: url("../img/section4/activities1.jpg");
+				}
             }
         }
     }

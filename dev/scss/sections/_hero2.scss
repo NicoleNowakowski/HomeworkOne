@@ -1,11 +1,12 @@
 /* =============
     Hero2
 ============= */
-#hero2 {
+#hero2{
+
     @include xl{
         display: grid;
         grid-template-columns: auto 1350px auto;
-        grid-template-areas: ". hero2 .";
+        grid-template-areas: ". hero-2 .";
     }
     
     ul{
@@ -17,7 +18,8 @@
         @include xl{
             grid-template-columns: 70% auto;
             grid-template-areas: "feature1 feature3"
-                                 "feature1 feature2";
+            "feature1 feature2";
+            grid-template-rows: repeat(2, 300px);
         }
 
         @include xl{
@@ -25,32 +27,41 @@
         }
 
 
+        li {
+            background-position: center;
+            background-size: cover;
+            height: 320px;
 
+            @include md {
+                height: 500px;
+            }
 
-        li{
-            img{
-                width: 100%;
+            @include lg {
+                height: auto;
             }
         }
 
         #feature1{
+            background-image: url("../img/section3/feature1.jpg");
             @include xl{
                 grid-area: feature1;
             }
         }
 
         #feature3{
+            background-image: url("../img/section3/feature3.jpg");
             @include xl{
                 grid-area: feature3;
             }
         }
 
         #feature2{
+            background-image: url("../img/section3/feature2.jpg");
+				display: none;
             @include xl{
+                display: block;
                 grid-area: feature2;
             }
-    
-           
         }
     }
 }
