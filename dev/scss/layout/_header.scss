@@ -6,7 +6,7 @@ header{
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". header .";
-    background-color: $rurikonark;
+    background-color: $rurikondark;
     >div{
         grid-area: header;
          padding: 15px;

@@ -352,14 +352,6 @@ template {
 /* =============
     Base
 ============= */
-h1 {
-  font-family: "Volkhov", serif;
-}
-
-p, h2, h3, h4, h5, address, a {
-  font-family: "Raleway", sans-serif;
-}
-
 ul {
   margin: 0;
   padding: 0;
@@ -368,12 +360,60 @@ ul li {
   list-style: none;
 }
 
+.content {
+  margin-bottom: 24px;
+}
+@media (min-width: 768px) {
+  .content {
+    margin-bottom: 32px;
+  }
+}
+@media (min-width: 1200px) {
+  .content {
+    margin-bottom: 64px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
 /* =============
     Typography
 ============= */
+h1 {
+  font-family: "Volkhov", serif;
+}
+
+p, h2, h3, h4, h5, address, a {
+  font-family: "Raleway", sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  padding: 0;
+  margin: 0;
+}
+
 /* =============
     Buttons
 ============= */
+button {
+  cursor: pointer;
+}
+
+.orange-button {
+  background-color: #E78D1E;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px;
+  transition: 0.25s;
+}
+.orange-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
 /* =============
     Forms
 ============= */
@@ -395,37 +435,34 @@ textarea {
 /* =============
     Navigation
 ============= */
+a {
+  text-decoration: none;
+  transition: 0.25s;
+}
+
 /* =============
     Header
 ============= */
 header {
-  background-color: #090E1E;
   display: grid;
-}
-@media (min-width: 1200px) {
-  header {
-    grid-template-areas: ". header .";
-    grid-template-columns: auto 1200px auto;
-  }
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". header .";
+  background-color: #090E1E;
 }
 header > div {
+  grid-area: header;
   padding: 15px;
 }
-@media (min-width: 1200px) {
-  header > div {
-    grid-area: header;
-  }
-}
-header > div section img {
+header > div img {
   width: 96px;
 }
 @media (min-width: 768px) {
-  header > div section img {
+  header > div img {
     width: 123px;
   }
 }
 @media (min-width: 1024px) {
-  header > div section img {
+  header > div img {
     width: 150px;
   }
 }
@@ -435,77 +472,82 @@ header > div section img {
 ============= */
 footer {
   background-color: #090E1E;
-  padding: 16px;
+  color: #BFC9E0;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". footer .";
 }
 @media (min-width: 1200px) {
   footer {
-    display: grid;
-    grid-template-areas: ". footer .";
     grid-template-columns: auto 1200px auto;
   }
 }
-footer div h1 {
-  color: #F7D7AF;
-  font-size: 20pt;
-  font-weight: 400;
-  margin-bottom: 16px;
-}
-footer div section {
-  padding-top: 16px;
-}
-footer div section h2 {
-  font-size: 16pt;
-  font-weight: 600;
-  color: #BFC9E0;
-  padding-bottom: 8px;
-}
-footer div section ul {
-  border-bottom: 1px solid #F4E7E6;
-  padding-bottom: 16px;
-}
-footer div section ul li {
-  display: flex;
-  margin-bottom: 16px;
-}
-footer div section ul li div {
-  align-items: center;
-  display: flex;
-  margin-right: 16px;
-}
-footer div section ul li address {
-  font-size: 12pt;
-  font-weight: 400;
-  color: #BFC9E0;
-}
-footer div section ul li a {
-  font-size: 12pt;
-  font-weight: 400;
-  color: #BFC9E0;
-}
 footer > div {
-  display: grid;
-  gap: 24px;
+  grid-area: footer;
 }
 @media (min-width: 768px) {
   footer > div {
+    dsplay: grid;
     grid-template-areas: "upcomingevents newsletter" "upcomingevents social";
     grid-template-columns: 50% auto;
+    gap: 16px;
   }
 }
 @media (min-width: 1024px) {
   footer > div {
     grid-template-areas: "upcomingevents newsletter social";
     grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
   }
 }
-@media (min-width: 1200px) {
-  footer > div {
-    grid-area: footer;
-  }
+footer > div h1 {
+  color: #F7D7AF;
+  font-size: 20pt;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+footer > div section {
+  padding-top: 16px;
+}
+footer > div section h2 {
+  color: #BFC9E0;
+  font-size: 1rem;
+  font-weight: 600;
+  padding-bottom: 8px;
+}
+footer > div section ul {
+  border-bottom: 1px solid #F4E7E6;
+  padding-bottom: 16px;
+}
+footer > div section ul li {
+  display: flex;
+  margin-bottom: 16px;
+}
+footer > div section ul li div {
+  align-items: center;
+  display: flex;
+  margin-right: 16px;
 }
 @media (min-width: 768px) {
   footer > div #upcomingevents {
     grid-area: upcomingevents;
+  }
+}
+footer > div #upcomingevents i {
+  color: #BFC9E0;
+}
+footer > div #upcomingevents a:link,
+footer > div #upcomingevents a:visited {
+  color: #121E39;
+}
+footer > div #upcomingevents a:link:hover, footer > div #upcomingevents a:link:active,
+footer > div #upcomingevents a:visited:hover,
+footer > div #upcomingevents a:visited:active {
+  color: #305199;
+}
+@media (min-width: 768px) {
+  footer > div #upcomingevents #nova {
+    border: none;
   }
 }
 @media (min-width: 768px) {
@@ -514,36 +556,169 @@ footer > div {
   }
 }
 footer > div #newsletter form input {
+  background-color: #D4D6DE;
   border: none;
+  color: #090E1E;
+  padding: 16px 2%;
+  width: 96%;
+}
+footer > div #newsletter form input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #090E1E;
+  /* Firefox */
+  opacity: 1;
+}
+footer > div #newsletter form input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #090E1E;
+}
+footer > div #newsletter form input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #090E1E;
+}
+footer > div #newsletter form button {
+  display: flex;
+  margin-left: auto;
+  margin-top: 16px;
 }
 @media (min-width: 768px) {
   footer > div #social {
     grid-area: social;
+    margin-top: -100px;
+  }
+}
+@media (min-width: 1024px) {
+  footer > div #social {
+    margin-top: 0px;
+  }
+}
+@media (min-width: 1024px) {
+  footer > div #social h1 {
+    text-align: right;
   }
 }
 footer > div #social ul {
   border: none;
+  display: flex;
 }
+@media (min-width: 1024px) {
+  footer > div #social ul {
+    justify-content: flex-end;
+  }
+}
+footer > div #social ul li {
+  margin-right: 16px;
+}
+@media (min-width: 1024px) {
+  footer > div #social ul li {
+    margin-left: 16px;
+    margin-right: 0px;
+  }
+}
+footer > div #social ul li a:link,
+footer > div #social ul li a:visited {
+  color: #fff;
+  font-size: 1.875rem;
+}
+footer > div #social ul li a:link:hover, footer > div #social ul li a:link:active,
+footer > div #social ul li a:visited:hover,
+footer > div #social ul li a:visited:active {
+  color: #305199;
+}
+
 /* =============
     Hero1
 ============= */
-#hero1 > div img {
+#hero1 img {
   display: block;
+  object-fit: cover;
   width: 100%;
 }
-#hero1 > div ul #hero-item {
+@media (min-width: 768px) {
+  #hero1 section ul {
+    grid-area: hero-content;
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
+}
+@media (min-width: 1024px) {
+  #hero1 section ul {
+    grid-template-columns: 50% auto;
+  }
+}
+#hero1 section ul li a:link,
+#hero1 section ul li a:visited {
+  color: #000;
+  transition: 0.25s;
+  padding: 16px;
+  transition: 0.25s;
+  display: flex;
+}
+@media (min-width: 768px) {
+  #hero1 section ul li a:link,
+#hero1 section ul li a:visited {
+    padding: 24px 16px;
+  }
+}
+@media (min-width: 768px) {
+  #hero1 section ul li a:link,
+#hero1 section ul li a:visited {
+    padding: 16px;
+  }
+}
+#hero1 section ul li a:link:hover, #hero1 section ul li a:link:active,
+#hero1 section ul li a:visited:hover,
+#hero1 section ul li a:visited:active {
+  background-color: #000;
+  color: #fff;
+}
+#hero1 section ul li a:link .hero-right,
+#hero1 section ul li a:visited .hero-right {
+  align-items: center;
+  display: flex;
+  margin-left: auto;
+  font-size: 1.125rem;
+}
+#hero1 section ul li a:link .hero-right h5,
+#hero1 section ul li a:visited .hero-right h5 {
+  margin-right: 10px;
+  display: none;
+}
+@media (min-width: 1024px) {
+  #hero1 section ul li a:link .hero-right h5,
+#hero1 section ul li a:visited .hero-right h5 {
+    display: block;
+  }
+}
+#hero1 section ul #hero-item {
   background-color: #703824;
 }
-#hero1 > div ul #hero-item h2 {
-  font-size: 18px;
-  font-weight: 400;
+@media (min-width: 1200px) {
+  #hero1 section ul #hero-item {
+    display: grid;
+    grid-template-columns: auto 600px;
+    grid-template-areas: ". product";
+  }
 }
-#hero1 > div ul #hero-item p {
-  font-size: 14pt;
-  font-weight: 400;
+@media (min-width: 1200px) {
+  #hero1 section ul #hero-item a {
+    grid-area: product;
+  }
 }
-#hero1 > div ul #hero-location {
+#hero1 section ul #hero-location {
   background-color: #A65335;
+}
+@media (min-width: 1200px) {
+  #hero1 section ul #hero-location {
+    display: grid;
+    grid-template-columns: 600px auto;
+    grid-template-areas: "location .";
+  }
+}
+@media (min-width: 1200px) {
+  #hero1 section ul #hero-location a {
+    grid-area: location;
+  }
 }
 
 /* =============
@@ -553,7 +728,7 @@ footer > div #social ul {
   #hero2 {
     display: grid;
     grid-template-columns: auto 1350px auto;
-    grid-template-areas: ". hero2 .";
+    grid-template-areas: ". hero-2 .";
   }
 }
 @media (min-width: 768px) {
@@ -566,6 +741,7 @@ footer > div #social ul {
   #hero2 ul {
     grid-template-columns: 70% auto;
     grid-template-areas: "feature1 feature3" "feature1 feature2";
+    grid-template-rows: repeat(2, 300px);
   }
 }
 @media (min-width: 1200px) {
@@ -573,21 +749,44 @@ footer > div #social ul {
     grid-area: hero2;
   }
 }
-#hero2 ul li img {
-  width: 100%;
+#hero2 ul li {
+  background-position: center;
+  background-size: cover;
+  height: 320px;
+}
+@media (min-width: 768px) {
+  #hero2 ul li {
+    height: 500px;
+  }
+}
+@media (min-width: 1024px) {
+  #hero2 ul li {
+    height: auto;
+  }
+}
+#hero2 ul #feature1 {
+  background-image: url("../img/section3/feature1.jpg");
 }
 @media (min-width: 1200px) {
   #hero2 ul #feature1 {
     grid-area: feature1;
   }
 }
+#hero2 ul #feature3 {
+  background-image: url("../img/section3/feature3.jpg");
+}
 @media (min-width: 1200px) {
   #hero2 ul #feature3 {
     grid-area: feature3;
   }
 }
+#hero2 ul #feature2 {
+  background-image: url("../img/section3/feature2.jpg");
+  display: none;
+}
 @media (min-width: 1200px) {
   #hero2 ul #feature2 {
+    display: block;
     grid-area: feature2;
   }
 }
@@ -595,14 +794,86 @@ footer > div #social ul {
 /* =============
     JoinUs
 ============= */
-#joinus > div ul {
+#joinus {
   display: grid;
-  gap: 16px;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". joinus .";
+}
+@media (min-width: 1200px) {
+  #joinus {
+    grid-template-columns: auto 1000px auto;
+  }
+}
+#joinus > div {
+  padding: 0 16px;
+  grid-area: joinus;
+}
+@media (min-width: 768px) {
+  #joinus > div ul {
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 16px;
+  }
 }
 #joinus > div ul li {
   background-color: #BFC9E0;
-  display: flex;
   padding: 16px;
+  display: flex;
+}
+@media (min-width: 768px) {
+  #joinus > div ul li {
+    padding: 24px 16px;
+  }
+}
+@media (min-width: 768px) {
+  #joinus > div ul li {
+    padding: 24px 16px;
+  }
+}
+#joinus > div ul li section {
+  padding-right: 20%;
+  align-items: center;
+  display: flex;
+}
+@media (min-width: 768px) {
+  #joinus > div ul li section {
+    padding-right: 0%;
+  }
+}
+#joinus > div ul li section div h2 {
+  font-size: 22pt;
+  font-weight: 400;
+  font-variation-settings: "wght" 600;
+  margin-bottom: 8px;
+  color: #FDFAF2;
+}
+@media (min-width: 768px) {
+  #joinus > div ul li section div h2 {
+    font-size: 29pt;
+  }
+}
+#joinus > div ul li aside {
+  margin-left: auto;
+}
+#joinus > div ul li aside div {
+  background-position: center;
+  background-size: cover;
+  border: 4px #fff solid;
+  border-radius: 100%;
+  height: 85px;
+  width: 85px;
+}
+@media (min-width: 768px) {
+  #joinus > div ul li aside div {
+    height: 113px;
+    width: 113px;
+  }
+}
+#joinus > div ul li aside #joinusleft {
+  background-image: url("../img/section2/icon.png");
+}
+#joinus > div ul li aside #joinusright {
+  background-image: url("../img/section2/icon2.png");
 }
 
 /* =============
@@ -620,16 +891,22 @@ footer > div #social ul {
     grid-template-columns: auto 1024px auto;
   }
 }
-#new > div h1 {
-  color: #18254F;
-  font-size: 20pt;
+@media (min-width: 768px) {
+  #new > div {
+    grid-area: new;
+  }
+}
+#new > div > h1 {
+  color: #FBF1DA;
+  font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 16px;
   padding: 0 16px;
 }
 @media (min-width: 768px) {
-  #new > div {
-    grid-area: new;
+  #new > div > h1 {
+    font-size: 1.5625rem;
+    font-weight: 700;
   }
 }
 @media (min-width: 768px) {
@@ -648,69 +925,93 @@ footer > div #social ul {
 }
 #new > div ul li {
   background-color: #18254F;
+  box-shadow: 0px 1px 1px 0px rgba(42, 48, 54, 0.3);
 }
-#new > div ul li img {
-  width: 100%;
+#new > div ul li > div {
+  background-position: center bottom;
+  background-size: cover;
+  height: 165px;
+}
+@media (min-width: 768px) {
+  #new > div ul li > div {
+    height: 180px;
+  }
+}
+@media (min-width: 1024px) {
+  #new > div ul li > div {
+    height: 160px;
+  }
 }
 #new > div ul li section {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". new-content .";
 }
-#new > div ul li section h1 {
-  color: #FBF1DA;
-  font-size: 27pt;
-  font-weight: 400;
+#new > div ul li section > div {
+  padding: 16px;
+  grid-area: new-content;
+}
+#new > div ul li section > div h1 {
+  font-size: 1.6875rem;
+  font-weight: 700;
   margin-bottom: 16px;
 }
-#new > div ul li section p {
-  color: #FDFAF2;
-  font-size: 16pt;
-  font-weight: 400;
-  margin-bottom: 16pt;
-}
-#new > div ul li section > div {
-  grid-area: new-content;
+#new > div ul li section > div p {
+  margin-bottom: 16px;
 }
 @media (min-width: 768px) {
   #new > div ul #new-gallery-1 {
     grid-area: n1;
   }
 }
+#new > div ul #new-gallery-1 > div {
+  background-image: url("../img/section4/tourschedule1.jpg");
+}
 @media (min-width: 768px) {
   #new > div ul #new-gallery-2 {
     grid-area: n2;
   }
+}
+#new > div ul #new-gallery-2 > div {
+  background-image: url("../img/section4/about2.jpg");
 }
 @media (min-width: 768px) {
   #new > div ul #new-gallery-3 {
     grid-area: n3;
   }
 }
+#new > div ul #new-gallery-3 > div {
+  background-image: url("../img/section4/whatyoucanexpect1.jpg");
+}
 @media (min-width: 768px) {
   #new > div ul #new-gallery-4 {
     grid-area: n4;
   }
+}
+#new > div ul #new-gallery-4 > div {
+  background-image: url("../img/section4/learnaboutourlanterns1.jpg");
 }
 @media (min-width: 768px) {
   #new > div ul #new-gallery-5 {
     grid-area: n5;
   }
 }
+#new > div ul #new-gallery-5 > div {
+  background-image: url("../img/section4/activities1.jpg");
+}
 
 /* =============
     Search
 ============= */
 #search {
-  background-color: #FFFFFF;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
+  background-color: #fff;
 }
 #search > div {
-  padding: 16px;
   grid-area: search;
-  margin: 0 15px;
+  padding: 16px;
 }
 @media (min-width: 1200px) {
   #search > div {
@@ -719,8 +1020,53 @@ footer > div #social ul {
     grid-template-areas: ". search-content .";
   }
 }
-@media (min-width: 1200px) and (min-width: 1200px) {
+@media (min-width: 1200px) {
   #search > div form {
     grid-area: search-content;
   }
+}
+#search > div form input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #305199;
+  color: #18254F;
+  width: 80%;
+}
+@media (min-width: 768px) {
+  #search > div form input {
+    font-size: 1.875rem;
+    font-weight: 300;
+    width: 90%;
+  }
+}
+@media (min-width: 1024px) {
+  #search > div form input {
+    font-size: 2.1875rem;
+  }
+}
+#search > div form input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #090E1E;
+  /* Firefox */
+  opacity: 1;
+}
+#search > div form input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #090E1E;
+}
+#search > div form input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #090E1E;
+}
+#search > div form button {
+  background-color: #E78D1E;
+  border: none;
+  border-radius: 3.5px;
+  font-size: 1.875rem;
+  margin-left: 10px;
+  padding: 10px 15px;
+}
+#search > div form buttonhover {
+  background-color: #000;
+  color: #fff;
 }
