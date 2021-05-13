@@ -16,7 +16,7 @@ footer {
         grid-area: footer;
 
 		@include md {
-			dsplay: grid;
+			display: grid;
 			grid-template-areas:
 				"upcomingevents newsletter"
 				"upcomingevents social";

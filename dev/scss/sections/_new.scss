@@ -20,7 +20,7 @@
         }
 
         >h1{
-            color: $barleygroats;
+            color: $rurikon;
 			font-size: rem-calc(20);
 			font-weight: 700;
 			margin-bottom: 16px;
@@ -53,9 +53,7 @@
                 background-color: $rurikon;
                 box-shadow: 0px 1px 1px 0px rgba(42, 48, 54, .3);
     
-                // img{
-                //     width: 100%;
-                // }
+             img {width: 100%;}
 
                 >div {
 					background-position: center bottom;
@@ -79,11 +77,13 @@
                         padding: 16px;
                         grid-area: new-content;
                         h1 {
+                            color: $barleygroats ;
                             font-size: rem-calc(27);
                             font-weight: 700;
                             margin-bottom: 16px;
                         }
                         p {
+                            color: $barleygroats;
                             margin-bottom: 16px;
                         }
                     }
