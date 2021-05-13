@@ -2,108 +2,181 @@
     Footer
 ============= */
 footer {
-	background-color: #090E1E;
-	padding: 16px;
+    background-color: $rurikondark;
+    color: $waterweltlight;
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". footer .";
 
-	@include xl {
-		display: grid;
-		grid-template-areas: ". footer .";
-		grid-template-columns: auto 1200px auto;
-	}
-div{
-	h1{ color: #F7D7AF ;
-		font-size: 20pt;
-		font-weight: 400;
-		margin-bottom: 16px;
-	}
-	section{
-		padding-top: 16px;
-		h2{ font-size: 16pt;
-			font-weight: 600;
-			color: #BFC9E0;
-			padding-bottom: 8px;
+    @include xl {
+        grid-template-columns: auto 1200px auto;
+    }
 
-		}
-		ul{
-			border-bottom: 1px solid #F4E7E6;
-			padding-bottom: 16px;
-			li{
-				display: flex;
-				margin-bottom: 16px;
-
-				div{
-				align-items: center;
-				display: flex;
-				margin-right: 16px;
-				}
-				address{
-					font-size: 12pt;
-					font-weight: 400;
-					color: #BFC9E0; 
-
-				}
-				a{
-					font-size: 12pt;
-					font-weight: 400;
-					color: #BFC9E0
-				}
-			}
-
-		}
-	}
-}
-	>div {
-		display: grid;
-		gap: 24px;
+    >div {
+        grid-area: footer;
 
 		@include md {
+			dsplay: grid;
 			grid-template-areas:
 				"upcomingevents newsletter"
 				"upcomingevents social";
 			grid-template-columns: 50% auto;
+			gap: 16px
 
 		}
 
 		@include lg {
 			grid-template-areas: "upcomingevents newsletter social";
 			grid-template-columns: repeat(3, 1fr);
+			gap: 24px
 		}
 
-		@include xl {
-			grid-area: footer;
-		}
+        h1 {
+            color: $sumacdyedight ;
+		font-size: 20pt;
+		font-weight: 400;
+		margin-bottom: 16px;
+        }
+
+        section {
+            padding-top: 16px;
+
+            h2 {
+				color: $waterweltlight;
+                font-size: rem-calc(16);
+                font-weight: 600;
+                padding-bottom: 8px;
+            }
+
+            ul {
+                border-bottom: 1px solid $lobsterbrownlight;
+                padding-bottom: 16px;
+
+                li {
+                    display: flex;
+                    margin-bottom: 16px;
+
+                    div {
+                        align-items: center;
+                        display: flex;
+                        margin-right: 16px;
+                    }
+                }
+            }
+        }
+
+        #upcomingevents {
+            @include md {
+                grid-area: upcomingevents;
+            }
+
+            i {
+                color: $waterweltlight;
+            }
+
+            a:link,
+            a:visited {
+                color: $waterweltdark;
+
+                &:hover,
+                &:active {
+                    color: $waterwelt
+                }
+            }
+
+            #nova {
+                @include md {
+                    border: none;
+                }
+            }
+        }
+
+        #newsletter {
+            @include md {
+                grid-area: newsletter;
+            }
+
+            form {
+                input {
+                    background-color: $rurikonlight;
+                    border: none;
+                    color: $rurikondark;
+                    padding: 16px 2%;
+                    width: 96%;
 
 
-		#upcomingevents {
-			@include md {
-				grid-area: upcomingevents;
-			}
-		}
+                    &::placeholder {
+                        /* Chrome, Firefox, Opera, Safari 10.1+ */
+                        color: $rurikondark;
+                        /* Firefox */
+                        opacity: 1;
+                    }
 
-		#newsletter {
-			@include md {
-				grid-area: newsletter;
-			}
+                    &:-ms-input-placeholder {
+                        /* Internet Explorer 10-11 */
+                        color: $rurikondark;
+                    }
 
-			form {
-				input {
-					border: none;
-				}
-			}
-		}
+                    &::-ms-input-placeholder {
+                        /* Microsoft Edge */
+                        color: $rurikondark;
+                    }
+                }
 
-		#social {
-			@include md {
-				grid-area: social;
-			}
+                button {
+                    display: flex;
+                    margin-left: auto;
+                    margin-top: 16px;
+                }
+
+            }
+        }
+
+        #social {
+            @include md {
+                grid-area: social;
+                margin-top: -100px;
+            }
+
+            @include lg {
+                margin-top: 0px;
+            }
+
+            h1 {
+                @include lg {
+                    text-align: right;
+                }
+            }
+
+            ul {
+                border: none;
+                display: flex;
+
+                @include lg {
+                    justify-content: flex-end;
+                }
 
 
-			ul {
-				border: none;
+                li {
+                    margin-right: 16px;
 
-				li {}
-			}
-		}
+                    @include lg {
+                        margin-left: 16px;
+                        margin-right: 0px;
+                    }
 
-	}
+                    a:link,
+                    a:visited {
+                        color: $white;
+                        font-size: rem-calc(30);
+
+                        &:hover,
+                        &:active {
+                            color: $waterwelt;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

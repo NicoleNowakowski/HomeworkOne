@@ -1,3 +1,20 @@
 /* =============
     Buttons
 ============= */
+button {
+    cursor: pointer;
+}
+
+.orange-button {
+    background-color: $sumacdyed;
+    border: none;
+    font-size: rem-calc(16);
+    font-weight: 600;
+    padding: 10px;
+    transition: 0.25s;
+
+    &:hover {
+        background-color: $black;
+        color: $white;
+    }
+}
